@@ -1,0 +1,111 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'FuturaLight', Arial;
+	min-height: 100vh; /*viewport height*/
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.container, .container2{
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	perspective: 1000px;
+	
+
+}
+.card, .card2{
+	transform-style: preserve-3d;
+	min-height: 80vh;
+	width: 35rem;
+	border-radius: 30px;
+	padding: 0rem 5rem;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.coffee, .coffee2{
+	min-height: 35vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform-style: preserve-3d;
+}
+.coffee img, .coffee2 img{
+	width: 20rem;
+	z-index: 2;
+	transition: all 0.75s ease-out;
+}
+
+.circle{
+	width: 15rem;
+	height: 15rem;
+	background: linear-gradient(to right, rgba(156, 83, 13, 0.7), rgba(255, 232, 211, 0.7));
+	position: absolute;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.info, .info2{
+	transform-style: preserve-3d;
+}
+.info h1, .info2 h1{
+	font-size: 3rem;
+	transition: all 0.75s ease-out;
+}
+.info h3, .info2 h3{
+	font-size: 1.3rem;
+	padding: 2rem 0rem;
+	color: lightgrey;
+	font-weight: lighter;
+	transition: all 0.75s ease-out;
+}
+
+.types, .types2{
+	display: flex;
+	justify-content: space-between;
+	transition: all 0.75s ease-out;
+}
+
+.types button, .types2 button{
+	padding: 0.5rem 2rem;
+	background: none;
+	border: none;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+	border-radius: 30px;
+	cursor: pointer;
+	font-weight: bold;
+	color: grey;
+}
+button.active{
+	background: grey;
+	color: white;
+}
+.finished, .finished2{
+	margin-top: 5rem;
+	transition: all 0.75s ease-out;
+}
+.finished button, .finished2 button{
+	width: 100%;
+	padding: 1rem 0rem;
+	background: rgba(156,83,13,255);
+	border-radius: 30px;
+	border: none;
+	color: white;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+
+@font-face{
+	font-family: 'FuturaLight';
+	src:  url('FuturaPTLight.otf');
+}
+/*
