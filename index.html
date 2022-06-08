@@ -7,6 +7,11 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	
+	<header>
+		<button class="btn-add">Add New</button>
+	</header>
+	<div id="div-container">
 	<div class="container">
 		<div class="card">
 			<div class="coffee">
@@ -15,20 +20,24 @@
 			</div>
 			<div class="info">
 				<h1 class="title">Coffee Pause</h1>
-				<h3>TAKE A BREAK, TAKE A COFFEE</h3>
+				<h3><input class="inputfield" placeholder="A BREAK, TAKE A COFFEE"></h3>
 				<div class="types">	
 					<button>5</button>
 					<button>10</button>
-					<button class="active">20</button>
+					<button>20</button>
 					<button>60</button>
 				</div>
 				<div class="finished">
-					<button>Finished</button>
+					<button>Start</button>
+				</div>
+				<div class="timer">
+					<p>00:00</p>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="container2">
+	</div>
+	<!--<div class="container2">
 		<div class="card2">
 			<div class="coffee2">
 				<div class="circle"></div>
@@ -48,7 +57,9 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
+	
+	<script src="add.js"></script>
 	<script src="app.js"></script>
 </body>
 </html>
