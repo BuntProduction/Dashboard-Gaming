@@ -16,13 +16,10 @@ header{
 }
 .container, .container2{
 	width: 40%;
-	display: flex;
 	justify-content: center;
 	align-items: center;
 	perspective: 1000px;
-	margin-right: 100px;
-	
-
+	margin: auto;
 }
 .card, .card2{
 	transform-style: preserve-3d;
@@ -59,16 +56,34 @@ header{
 .info, .info2{
 	transform-style: preserve-3d;
 }
-.info h1, .info2 h1{
+.info h1, .info2 h1, .titleInput{
 	font-size: 3rem;
 	transition: all 0.75s ease-out;
 }
+.titleInput{
+	border: none;
+	outline: none;
+	max-width: 100%;
+}
+.titleInput:focus, .inputfield:focus{
+	border: 1px solid grey;
+
+}
+
 .info h3, .info2 h3{
 	font-size: 1.3rem;
 	padding: 2rem 0rem;
 	color: lightgrey;
 	font-weight: lighter;
 	transition: all 0.75s ease-out;
+}
+.inputfield{
+	font-size: 1.3rem;
+	color: grey;
+	font-weight: lighter;
+	transition: all 0.75s ease-out;
+	border: none;
+	outline: none;
 }
 
 .types, .types2{
@@ -115,4 +130,5 @@ button:focus{
 #div-container{
 	display: flex;
 	flex-wrap: wrap;
+	margin: auto;
 }
