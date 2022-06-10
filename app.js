@@ -1,19 +1,19 @@
 //movement animation to happen
 const card = document.querySelector(".card");
-//const card2 = document.querySelector(".card2");
+const card2 = document.querySelector(".card2");
 const container = document.querySelector(".container");
-//const container2 = document.querySelector(".container2");
+const container2 = document.querySelector(".container2");
 //items
 const title = document.querySelector(".title");
 const coffee = document.querySelector(".coffee img");
 const finished = document.querySelector(".finished button");
 const info = document.querySelector(".info h3");
 const types = document.querySelector(".types");
-//const title2 = document.querySelector(".title2");
-//const coffee2 = document.querySelector(".coffee2 img");
-//const finished2 = document.querySelector(".finished2 button");
-//const info2 = document.querySelector(".info2 h3");
-//const types2 = document.querySelector(".types2");
+const title2 = document.querySelector(".title2");
+const coffee2 = document.querySelector(".coffee2 img");
+const finished2 = document.querySelector(".finished2 button");
+const info2 = document.querySelector(".info2 h3");
+const types2 = document.querySelector(".types2");
 
 //moving animation event
 container.addEventListener("mousemove", (e) => {
@@ -49,7 +49,7 @@ container.addEventListener("mouseleave", (e) => {
 });
 
 
-/*
+
 //moving animation event
 container2.addEventListener("mousemove", (e) => {
 	let centerX = container2.offsetLeft + container2.offsetWidth / 2;
@@ -81,4 +81,4 @@ container2.addEventListener("mouseleave", (e) => {
   	info2.style.transform = "translateZ(0px)";
   	types2.style.transform = "translateZ(0px)";
   	finished2.style.transform = "translateZ(0px)";
-});*/
+});

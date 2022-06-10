@@ -32,28 +32,43 @@
 				</div>
 				<div class="timer">
 					<p>00:00</p>
+					<input type="text" id="input" type="text" value="">
+    				<input type="button" id="buttonFunction" value="Résultat" onclick="timer()">
+					<div>
+						Time Left ::
+						<input id="minutes" type="text" style="width: 10px;
+							 border: none; font-size: 16px; 
+							font-weight: bold; color: black;"> :
+						<input id="seconds" type="text" style="width: 20px;
+										border: none; font-size: 16px;
+										font-weight: bold; color: black;">
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	</div>
-	<!--<div class="container2">
+	<!--
+	<div class="container2">
 		<div class="card2">
 			<div class="coffee2">
-				<div class="circle"></div>
+				<div class="circle2"></div>
 				<img src="./imgCoffee.png" alt="Coffee Image">
 			</div>
 			<div class="info2">
-				<h1 class="title2">Coffee Pause</h1>
-				<h3>TAKE A BREAK, TAKE A COFFEE</h3>
+				<h1 class="title2"><input class="titleInput" placeholder="Coffee Pause"></h1>
+				<h3><input class="inputfield" placeholder="A BREAK, TAKE A COFFEE"></h3>
 				<div class="types2">	
-					<button>5</button>
-					<button>10</button>
-					<button class="active">20</button>
-					<button>60</button>
+					<button value="5">5</button>
+					<button value="10">10</button>
+					<button value="20">20</button>
+					<button value="60">60</button>
 				</div>
 				<div class="finished2">
-					<button>Finished</button>
+					<button>Start</button>
+				</div>
+				<div class="timer">
+					<p>00:00</p>
 				</div>
 			</div>
 		</div>

@@ -84,6 +84,8 @@ header{
 	transition: all 0.75s ease-out;
 	border: none;
 	outline: none;
+	width: 100%;
+	word-wrap: break-word;
 }
 
 .types, .types2{
