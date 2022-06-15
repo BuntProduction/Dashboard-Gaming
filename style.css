@@ -5,6 +5,7 @@
 }
 
 body{
+	display: flex;
 	font-family: 'FuturaLight', Arial;
 	min-height: 100vh; /*viewport height*/
 }
@@ -21,24 +22,37 @@ header{
 	perspective: 1000px;
 	margin: auto;
 }
-.card, .card2{
+.card{
 	transform-style: preserve-3d;
+	margin: auto;
 	min-height: 80vh;
-	width: 35rem;
+	width: 75%;
+	min-width: 28rem;
 	border-radius: 30px;
 	padding: 0rem 5rem;
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+	margin-bottom: 10px;
+}
+.card2{
+	margin: auto;
+	min-height: 20vh;
+	width: 75%;
+	min-width: 28rem;
+	border-radius: 30px;
+	padding: 0rem 5rem;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+	margin-bottom: 10px;
 }
 
 
-.coffee, .coffee2{
+.coffee{
 	min-height: 35vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	transform-style: preserve-3d;
 }
-.coffee img, .coffee2 img{
+.coffee img{
 	width: 20rem;
 	z-index: 2;
 	transition: all 0.75s ease-out;
@@ -56,14 +70,25 @@ header{
 .info, .info2{
 	transform-style: preserve-3d;
 }
-.info h1, .info2 h1, .titleInput{
+.info h1, Input{
 	font-size: 3rem;
 	transition: all 0.75s ease-out;
+}
+.info2 h1{
+	font-size: 2rem;
 }
 .titleInput{
 	border: none;
 	outline: none;
 	max-width: 100%;
+	background: none;
+}
+.titleInput2{
+	border: none;
+	outline: none;
+	max-width: 100%;
+	background: none;
+	font-size: 2.2rem;
 }
 .titleInput:focus, .inputfield:focus{
 	border: 1px solid grey;
@@ -86,6 +111,7 @@ header{
 	outline: none;
 	width: 100%;
 	word-wrap: break-word;
+	background: none;
 }
 
 .types, .types2{
@@ -110,6 +136,7 @@ button:focus{
 }
 .finished, .finished2{
 	margin-top: 5rem;
+	padding-bottom: 1rem;
 	transition: all 0.75s ease-out;
 }
 .finished button, .finished2 button{
@@ -123,6 +150,19 @@ button:focus{
 	font-weight: bold;
 }
 
+.btn-add{
+	margin: auto;
+	padding-left: 0.75%;
+	padding-right: 0.75%;
+	background: none;
+	border: 2px solid lightgrey;
+	border-radius: 8px;
+	font-size: 3rem;
+	color: rgb(90, 90, 90);
+}
+.btn-add:hover{
+	background-color: lightgrey;
+}
 
 @font-face{
 	font-family: 'FuturaLight';
@@ -133,4 +173,15 @@ button:focus{
 	display: flex;
 	flex-wrap: wrap;
 	margin: auto;
+}
+
+.timerCard{
+	margin: auto;
+	margin-bottom: 50px;
+	font-size: 8rem;
+	text-align: left;
+	transition: all 0.75s ease-out;
+}
+.timerCard input{
+	padding-right: -100px;
 }

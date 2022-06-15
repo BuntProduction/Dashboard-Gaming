@@ -6,11 +6,11 @@
 	<title>Square JS Project</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body onload="timer()">
 	
-	<header>
-		<button class="btn-add">Add New</button>
-	</header>
+	<!--<header>
+		<button class="btn-add">+</button>
+	</header>-->
 	<div id="div-container">
 	<div class="container">
 		<div class="card">
@@ -22,7 +22,7 @@
 				<h1 class="title"><input class="titleInput" placeholder="Coffee Pause"></h1>
 				<h3><input class="inputfield" placeholder="A BREAK, TAKE A COFFEE"></h3>
 				<div class="types">	
-					<button value="5">5</button>
+					<button id="button5val" value="5">5</button>
 					<button value="10">10</button>
 					<button value="20">20</button>
 					<button value="60">60</button>
@@ -30,6 +30,7 @@
 				<div class="finished">
 					<button>Start</button>
 				</div>
+				<!--
 				<div class="timer">
 					<p>00:00</p>
 					<input type="text" id="input" type="text" value="">
@@ -43,38 +44,41 @@
 										border: none; font-size: 16px;
 										font-weight: bold; color: black;">
 					</div>
-				</div>
+				</div>-->
 			</div>
 		</div>
 	</div>
 	</div>
-	<!--
+	
+	
 	<div class="container2">
+		
 		<div class="card2">
-			<div class="coffee2">
-				<div class="circle2"></div>
-				<img src="./imgCoffee.png" alt="Coffee Image">
+			<div class="timerCard">
+			
+				<input id="minutes" type="text" style="width: 130px;
+					 border: none; font-size: 7rem; 
+					font-weight: bold; color: black;"> :
+				<input id="seconds" type="text" style="width: 130px;
+								border: none; font-size: 7rem;
+								font-weight: bold; color: black;">
 			</div>
 			<div class="info2">
-				<h1 class="title2"><input class="titleInput" placeholder="Coffee Pause"></h1>
+				<h1 class="title2"><input class="titleInput2" placeholder="Coffee Pause"></h1>
 				<h3><input class="inputfield" placeholder="A BREAK, TAKE A COFFEE"></h3>
-				<div class="types2">	
-					<button value="5">5</button>
-					<button value="10">10</button>
-					<button value="20">20</button>
-					<button value="60">60</button>
-				</div>
+				
 				<div class="finished2">
 					<button>Start</button>
-				</div>
+				</div><!--
 				<div class="timer">
 					<p>00:00</p>
-				</div>
+				</div>-->
 			</div>
 		</div>
-	</div>-->
+	</div>
 	
 	<script src="add.js"></script>
 	<script src="app.js"></script>
+	<script src="timer.js"></script>
 </body>
 </html>

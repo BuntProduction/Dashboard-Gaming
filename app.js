@@ -5,15 +5,11 @@ const container = document.querySelector(".container");
 const container2 = document.querySelector(".container2");
 //items
 const title = document.querySelector(".title");
+const timercard = document.querySelector(".timerCard");
 const coffee = document.querySelector(".coffee img");
 const finished = document.querySelector(".finished button");
 const info = document.querySelector(".info h3");
 const types = document.querySelector(".types");
-const title2 = document.querySelector(".title2");
-const coffee2 = document.querySelector(".coffee2 img");
-const finished2 = document.querySelector(".finished2 button");
-const info2 = document.querySelector(".info2 h3");
-const types2 = document.querySelector(".types2");
 
 //moving animation event
 container.addEventListener("mousemove", (e) => {
@@ -31,10 +27,11 @@ container.addEventListener("mouseenter", (e) => {
 	card.style.transition = "none";
 	//popout animation
 	title.style.transform = "translateZ(150px)";
+	
 	coffee.style.transform = "translateZ(200px)";
-  	info.style.transform = "translateZ(125px)";
-  	types.style.transform = "translateZ(100px)";
- 	finished.style.transform = "translateZ(75px)";
+  	//info.style.transform = "translateZ(125px)";
+  	//types.style.transform = "translateZ(100px)";
+ 	//finished.style.transform = "translateZ(75px)";
 });
 //animate out (when the mouse is out of the container)
 container.addEventListener("mouseleave", (e) => {
@@ -42,10 +39,11 @@ container.addEventListener("mouseleave", (e) => {
 	card.style.transform = `rotateY(0deg) rotateX(0deg)`;
 	//popback animation
 	title.style.transform = "translateZ(0px)";
+	
 	coffee.style.transform = "translateZ(0px)";
-  	info.style.transform = "translateZ(0px)";
-  	types.style.transform = "translateZ(0px)";
-  	finished.style.transform = "translateZ(0px)";
+  	//info.style.transform = "translateZ(0px)";
+  	//types.style.transform = "translateZ(0px)";
+  	//finished.style.transform = "translateZ(0px)";
 });
 
 
@@ -64,21 +62,11 @@ container2.addEventListener("mousemove", (e) => {
 //animate in
 container2.addEventListener("mouseenter", (e) => {
 	card2.style.transition = "none";
-	//popout animation
-	title2.style.transform = "translateZ(150px)";
-	coffee2.style.transform = "translateZ(200px)";
-  	info2.style.transform = "translateZ(125px)";
-  	types2.style.transform = "translateZ(100px)";
- 	finished2.style.transform = "translateZ(75px)";
+	timercard.style.transform = "translateZ(150px)";
 });
 //animate out (when the mouse is out of the container)
 container2.addEventListener("mouseleave", (e) => {
 	card2.style.transition = "all 0.5s ease";
 	card2.style.transform = `rotateY(0deg) rotateX(0deg)`;
-	//popback animation
-	title2.style.transform = "translateZ(0px)";
-	coffee2.style.transform = "translateZ(0px)";
-  	info2.style.transform = "translateZ(0px)";
-  	types2.style.transform = "translateZ(0px)";
-  	finished2.style.transform = "translateZ(0px)";
+	timercard.style.transform = "translateZ(0px)";
 });

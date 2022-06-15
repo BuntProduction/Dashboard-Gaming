@@ -1,7 +1,14 @@
 //set minutes
-var mins = document.getElementById("input").value;
+var mins = document.getElementById("button5val").value;
+if(mins === document.activeElement)
+{
+    var mins = document.getElementById("button5val").value;
+}
+else
+{
+    var mins = 11;
+}
 
-  
 //calculate the seconds
 var secs = mins * 60;
 
@@ -32,11 +39,11 @@ function Decrement() {
         //when less than a minute remaining
         //colour of the minutes and seconds
         //changes to red
-        /*
+        
         //if seconds becomes zero,
         //then page alert time up
         if (mins < 0) {
-            alert('time up');
+            
             minutes.value = 0;
             seconds.value = 0;
         }
@@ -44,7 +51,7 @@ function Decrement() {
         else {
             secs--;
             setTimeout('Decrement()', 1000);
-        }*/
+        }
     }
 
 }
